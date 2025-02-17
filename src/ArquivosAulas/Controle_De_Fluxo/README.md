@@ -1,5 +1,7 @@
 # Controle De Fluxo
 
+Esta pasta contém exemplos de códigos e anotações sobre estruturas de controle de fluxo em Java.
+
 ## Arquivos e Resumos
 
 ### Arquivo: `CondicaoTeste.java`
@@ -16,4 +18,4 @@
 
 ---
 
-Este README foi gerado automaticamente para facilitar a compreensão dos códigos presentes no diretório `Entradas_E_Saidas`.
+Este README foi gerado automaticamente para facilitar a compreensão dos códigos presentes no diretório `Controle_De_Fluxo`.
