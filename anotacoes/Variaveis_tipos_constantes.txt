@@ -1,0 +1,307 @@
+java é fortemente tipada
+
+a unica coisa que não é objeto são as variáveis primitivas mas a classe é um objeto logo tudo é objeto.
+
+variáveis são caixas vazias, e ela pode receber qualquer coisa.
+o tipo é para rotular a caixa e isso é fortemente tipada. rotular
+
+se é int a = 10;
+a não pode receber "hello world" que é string. apenas números inteiros.
+
+e por ser fortemente tipada tem a segurança de ler o código e saber que no final ela continua sendo o mesmo tipo e não precisar acompanhar totalmente o código pra saber oque está acontecendo com ela.
+
+byte (1 byte).
+• -128 a 127
+short (2 bytes):
+-32.768 a 32.767
+int (4 bytes):
+-2.147.483.648 a 2.147.483.647
+long (8 bytes).
+• -9.223.372.036.854.775.808 a
+9.223.372,036.854.775.807
+
+Essas variáveis servem para o espaço na memória.
+
+99% dos casos utiliza int e long
+
+programar em baixo nível, programar um compilador, se usa os outros tipos.
+
+se um sistema vai ser muito usado, já deve-se usar long
+
+long para id's.
+
+------------
+tipos de pontos flutuantes, lógico e Unicode
+
+float (4 bytes):
+dígitos decimais
+double (8 bytes):
+aprox. +- 3.40282347E+38F (6-7
+significativos)
+aprox. +- 1.797691313486231570E+308
+(15 dígitos decimais significativos)
+boolean: true / false
+char: único caractere: 'A'
+
+Double é bom para sistema financeiro, calculo cientifico onde se usa cada casa decimal.
+
+Quando a precisão não é muito exata, gráficos 3d, jogos, quando tem que dizer 1,5 que não precisa de muitas operações matemáticas.
+
+Na vida real se usa double.
+
+
+-------
+boolean só usa true e false. condicionais, decisões. se acontece ou não.
+se usa muito.
+
+char é usado para caracteres.
+programas de texto que precisa identificar letras especificas se usa char.
+
+mas é geralmente utilizado mais strings.
+
+Variáveis armazenam valores de forma dinâmica.
+
+
+Variáveis imutáveis.
+
+String recebe um valor de texto, é criado um objeto na memória que é aquilo la
+
+se você troca o texto, o objeto vai continuar do jeito que é e é criado um novo objeto na memoria com a nova informação, a variável que criei para de apontar para o antigo e apontar para o novo.
+
+o inteiro recebe um número.
+
+int age = 1; cria um objeto na memória.
+age = 30; vai la na memoria que apontava age e altera o valor.
+
+ele é mutável, não foi criado novo, apenas alterado.
+
+roda o programa, começa a debugar
+
+memoria1 = 30;
+aponta para memoria1 e colocar valor de 30
+memoria1 = 35;
+aponta para memoria1 e altera o valor de 35
+
+-------
+
+Já a String
+
+String nome = "Bruno";
+
+nome = memoria2 = Bruno
+nome = "Gabriel
+null = memoria2 = Bruno
+nome = memoria 3 = Gabriel
+
+Ai o garbage colector vai pegar esse null e deletar em algum momento durante a execução do código.
+
+String é o único objeto imutável no java por padrão
+Array é mutável.
+
+Site da oracle tem certificação Java e é um diferencial, certificação é paga mas as vezes sai testes gratuitos. e estudar pelo menos 2 meses e ter tempo. igual estudar para concurso.
+
+casa do código, livro de java para estudar a certificação.
+
+Oque chamamos de escopo?
+
+é onde fica dentro de {}
+//shadowing
+
+public class InstanciarVeiculos{
+	static int idade = 34;
+	
+public static void main {
+	print(idade)
+	vai printar 34
+
+	int idade = 50;
+	print(idade)
+	vai dar 50, porque vai rodar a mais próxima do escopo dele.
+	
+
+}
+
+public static void segundoMain{
+	print(idade)
+	vai printar 34.
+	ele vai printar o que está dentro da classe e não o do escopo de main pois pra ele main nem existe, pois está em outro escopo.
+
+}
+
+os argumentos também é dentro do proprio escopo.
+
+todo int que não é iniciado, tem valor de 0.
+
+
+
+
+}
+
+
+public class PACOTE1.Pessoa {
+
+    //PRIVATE - só a propria classe pode enxergar e ter acesso a ele.
+    //PUBLIC - qualquer classe dentro do projeto, consegue acessar. outros arquivos do projeto.
+    //PROTECTED -
+    //DEFAULT - Não precisa especificar.
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // O scanner se usa o System.in pois la na funçao por tras utiliza o inputstream, então ele precisa puxar system.in no ()
+
+
+
+        PACOTE1.Pessoa pessoa1 = new PACOTE1.Pessoa();
+        //PORQUE USAR NEW? Instanciando o objeto do tipo pessoa.
+        //PORQUE USAR (), ele não tem a ver com o construtor, o () é a forma do java chamar uma função. O construtor é uma função também.
+
+    }
+    // (String nome, String cpf) é a forma de obrigar o metodo a seguir um determinado padrão
+
+    //toda pessoa deve ter no minimo nome e cpf, se faz um padrão
+
+    //se estiver vazio não tem uma "obrigação" "padrão".
+//    public PACOTE1.Pessoa(String nome, String cpf){
+//
+//    }
+    public PACOTE1.Pessoa criacao();
+}
+
+
+por padrão java ja cria classe como
+
+public PACOTE1.Pessoa(){
+}
+
+
+Padrão do mercado:
+
+os atributos são privados.
+Para que ninguem de fora da propria classe possa alterar.
+
+O construtor é publico para ser replicado.
+
+FUNÇÕES PUBLICAS PARA OUTROS LUGARES USAR E PRIVADAS SÓ PARA CLASSE.
+
+Public boolean validarCPF(){
+
+}
+
+VOID É FUNÇÃO VAZIA, SEM RETORNO.
+
+é uma boa pratica usar this para referenciar a classe.
+
+Métodos a primeira palavra é minuscula e a segunda começa maiuscula igual variaveis
+
+Construtor tem o nome da classe
+
+this diz, esse construtor está modificando a classe.
+
+Sobrecarga significa ter duas funções com mesmo nome mas parametros diferentes.
+
+public void imprimir(){
+            System.out.println("nome: " + nome + " cpf: " + cpf);
+        }
+
+public void imprimir(int i){
+            System.out.println("nome: " + nome + " cpf: " + cpf);
+        }
+
+Dois ou mais metodos que tem exatamente o mesmo proposito mas diferenciam pelos atributos, 1 recebe string, outro recebe inteiro
+Muda um pouco a regra por causa dos parametros mas tem o mesmo proposito.
+
+coloca variaveis em private e usa metodos public para pegar a variavel private e alterar e colocar logica
+
+private String cpf;
+
+public void setCpf(String cpf){
+    if(cpf !=null && cpf.length() == 11){
+
+    }
+}
+Verifica valor null ou se tem exatamente 11 numeros.
+
+se fosse só puxar de uma variavel public, qualquer lugar do projeto poderia alterar e esse metodo ja inclui uma logica para deixar mais certinho a parametrização do variavel.
+
+
+public class Pessoa{ classe padrão java mutavel
+}
+
+Record é DTO, classes para propagar dados.
+mas nao pode ter atributos (variaveis).
+como se fosse um metodo com argumentos dentrodo ()
+
+public record PessoaRecord (String nome, String cpf){
+
+}
+
+para outra classe usa-la:
+
+PessoaRecord pessoaRecord = new PessoaRecord("","");
+        pessoaRecord.cpf();
+        pessoaRecord.nome();
+
+        aqui não vai funcionar, pois não deixa alterar
+        pessoaRecord.nome = "";
+
+Record é imutavel.
+
+
+Por tras dos panos java esta fazendo isso:
+
+public record PessoaRecord (private final String nome, String cpf){
+    public String nome(){
+        return this.nome;
+    }
+}
+dto = data transfer object.
+
+java copiou do kotlin o record.
+
+google criou o kotlin em cima do java, todo codigo kotlin é java, para mobile.
+
+record foi criado para receber dados e envia-los sem mudanças.
+
+imagina um sistema de cadastrar pessoas.
+
+
+regras de negocio é para uma classe.
+
+para trafegar dados usa record.
+
+------------------
+Imutabilidade do record é diferente da string
+
+na string é como se tivesse dando um novo new na string para setar um novo objeto.
+
+-----
+constantes:
+final int QUANTIDADE_TENTATIVAS = 3;
+todas as letras maiusculas.
+
+variavel pode ser final
+classe pode ser final
+
+-----
+String meuPrimeiroNome;
+String nome;
+String nomeCompleto;
+
+public class MeuNome
+
+UncleBob, criador do livro cleancode.
+
+funções devem fazer somente uma coisa e fazer muito bem, pois aumenta a complexidade de manutenção depois.
+
+Abster de comentários no código pois ter que explicar o codigo quer dizer que foi mal feito, ele deve ser intuitivo.
+
+deixar comentários para o git/github no commit.
+
+Nunca deixar valores soltos, sempre nomear tudo.
+
+
+
+
+
+
+

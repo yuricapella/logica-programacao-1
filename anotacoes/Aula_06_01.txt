@@ -1,0 +1,102 @@
+    Operadores lógicos
+
+    && quando as duas condições são verdadeiras, é verdadeiro
+    se a primeira for falsa, a segunda nem é testada (importante).
+
+== compara referencia na memoria
+.equals compara valores
+
+@override quer dizer que está sobrescrevendo, quando troca uma função já feita
+
+Dois objetos com valores sendo comparados é utilizado .equals para comparação porém ainda dará false, pois precisa falar para o .equals as coisas que serão comparadas.
+
+Tem sistemas que não vao comparar nome,idade cpf
+Apenas o cpf já está bom pois é um identificador unico.
+
+Toda classe é um object.
+
+Object é a classe pai de todas, então tudo puxa de object
+
+Então qualquer classe criada vai ser filha de object
+
+Sobrescrever é pegar um metodo nativo e modificar ele
+
+Se sobrescrever não pode chamar o metodo original.
+
+public boolean equals(Object o){
+    Pessoa pessoa = (Pessoa) o;
+    return cpf.equals(pessoa.cpf);
+}
+
+Intellij deixa a palavra em italico quando o metodo é static.
+
+Metodo static não pertence a uma instancia da classe, não da de usar this.
+
+Static é como se fosse constantes, usado para utilitarios e nao pode chamar funções da classe. Só usa metodos static.
+
+---
+o padrão de comparação do equals é comparar instancia
+por isso deve fazer o override, para fazer a propria comparação
+
+Objects.equals é null safe, tem tratamento de erros.
+
+Objetos nulos, não pode chamar funções.
+null é ausencia, não existe
+
+Boa pratica é usar Objects.equals ao inves de só .equals
+
+== e ! para primitivos
+para usar o .equals para usar em objetos tem que implementa-los para comparar os valores
+
+primitivos não podem usar .equals pois não são classes.
+
+contador que é contador = contador + 1
+pode-se usar contador++, ou contador-- para diminuir 1, não existe outro, não pode ** //
+
+----------
+for padrão:
+for (x;x;x){
+}
+
+for(int i = 0; i <= 10; i++{
+    System.out.println(i);
+}
+for(int i = 0; i <= 10; ++i{
+    System.out.println(i);
+}
+primeiro executa
+int i= 0
+
+segundo executa
+i <= 10
+
+terceiro executa
+i++ ou ++i
+vai ser a mesma coisa
+
+for(int i = 0; i <= 10;{
+    System.out.println(i);
+}
+loop infinito
+
+for(int i = 0; i++ <= 10;{
+    System.out.println(i);
+}
+começa do 1 e vai até 11
+Porque ?
+ele compara 0 <= 10 e incrementa + 1, printa 1
+chega no 10 <=10 e incrementa + 1, printa 11 e para.
+
+for(int i = 0; ++i <= 10;{
+    System.out.println(i);
+}
+começa do 1 e vai até 10
+ele incrementa 1 e compara se é <= 10 e printa 1
+10 <=10, já incrementou então printa 10 e para
+---------------
+
+Parenteses>
+multiplicação,divisão,modulo>
+adições,subtrações>
+operadores relacionais, logicos>
+

@@ -1,0 +1,13 @@
+Exercício 5: Função com Enum e Scanner
+
+Crie um enum chamado MesAno representando os meses do ano.
+Escreva uma função que recebe um mês como entrada e ano,
+utilize um Scanner para obter um ano e o mês escolhido.
+A função deve imprimir a quantidade de dias no mês e
+considerar se o ano é bissexto.
+
+Janeiro, Março, Maio, Julho, Agosto, Outubro, Dezembro → 31 dias.
+Abril, Junho, Setembro, Novembro → 30 dias.
+Fevereiro → 28 dias, ou 29 dias em anos bissextos.
+
+Parece ter um calculo para verificar os dias de cada mes usando modulo % 4 algo assim, verificar.

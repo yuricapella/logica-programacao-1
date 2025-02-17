@@ -1,0 +1,76 @@
+O que são paradigmas de programação?
+São como regras
+Apontam a melhor forma de solucionar problemas usando determinada linguagem.
+
+java pegou aspectos bons do imperativo, e trouxe a questão do objeto.
+
+Oque é um objeto? é tudo, toda classe, toda variável, tudo que faz em java é objeto.
+
+classe string no final é uma filha de um objeto.
+
+Todas as classes são filhas de um pai que é o objeto.
+
+Objetos tem dados, informações, comportamentos
+
+resumido em duas coisas:
+
+Características, oque tem, e oque faz
+encapsula varias coisas dentro de uma classe só, e ela tem características e comportamentos
+
+e chegar mais perto do mundo real,
+
+avião tem características, marcas, modelos
+comportamentos, decola, voa
+
+paradigma imperativo
+paradigma funcional
+paradigma logico
+paradigma orientado a objetos,
+
+Java depois da versão 8 evoluiu para o funcional.
+Kotlin foi criado baseado em java com uma orientação a objetos mais funcional
+
+O java vendo isso também chegou junto e evoluiu esse aspecto.
+
+-----
+
+tudo pra existir tem um peso no computador
+na linguagem C precisa fazer manualmente
+
+java faz isso automaticamente.
+
+java quer deixar mais perto de resolver o problema proposto/empresa e não se preocupar com a maquina, apenas da vida real
+alocação de memoria e limpeza de memoria o java já cuida disso automaticamente.
+
+Estrutura de dados com bibliotecas prontas que linguagens antigas não possuem.
+
+Código gera um executável para poder rodar no sistema operacional.
+
+Chegou um tempo na internet que pediu para que seja multiplataformas e java trouxe isso
+
+.java é compilado e transformado em bytecode .class e esse arquivo que é rodado no sistema operacional
+
+e é a JVM que faz essas traduções.
+
+Java foi o pioneiro em multiplataforma. O principal diferencial foi esse.
+
+jdk,jre,jvm
+
+Java é uma das linguagens de Orientação a Objetos mais usadas;
+
+Java é simples, versátil, robusto e seguro - com atualizações constantes.
+
+Portável (independente de sistema operacional);
+
+Gratuita e open-source;
+
+Popular, rodeada por uma comunidade muito ativa;
+
+Muitas ferramentas disponíveis
+
+Muita documentação (bibliotecas, forums e muitos problemas resolvidos pela internet a fora).
+
+Java tem uma referencia na parte ocidental, java é uma ilha, também tem Jakarta que eles criaram o java enterprise, java pra empresa que roda na web que não é muito usado pois já tem o sprint, mas é chamado de Jacarta também.
+
+jetbrains, criadora do kotlin, intellij.
+

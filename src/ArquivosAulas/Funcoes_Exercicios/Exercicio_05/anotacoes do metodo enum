@@ -1,0 +1,51 @@
+ MesAno mesEnum = MesAno.valueOf(mes);
+ mesEnum se torna uma referencia de MesAno que é Janeiro
+ fica:
+ MesAno = Janeiro
+
+ int dia = mesEnum.getDias(ano);
+ dia se torna uma referencia de mesEnum.getDias
+ fica:
+ Janeiro.31
+
+  public enum MesAno {
+     JANEIRO(31), <-----
+     FEVEREIRO(28),
+     MARCO(31),
+     ABRIL(30),
+     MAIO(31),
+     JUNHO(30),
+     JULHO(31),
+     AGOSTO(31),
+     SETEMBRO(30),
+     OUTUBRO(31),
+     NOVEMBRO(30),
+     DEZEMBRO(31);
+
+     private final int dias;
+
+     MesAno(int dias) {
+         this.dias = dias;
+     }
+
+     public int getDias(int ano){
+         if (this == FEVEREIRO && verificaAnoBissexto(ano)){
+             return 29;
+         }
+         return this.dias;
+     }
+
+ Mas porque?
+
+ se MesAno é o proprio mes
+
+ o Construtor como assim dizem MesANO(int dias)
+ é o proprio JANEIRO(31)
+
+ getDias é o metodo para puxar o dia de JANEIRO(31)
+
+ return this.dias é a mesma coisa que:
+ return MesAno.dias
+ return JANEIRO.31
+
+

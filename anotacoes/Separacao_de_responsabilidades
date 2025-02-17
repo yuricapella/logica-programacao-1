@@ -1,0 +1,11 @@
+Metodo deve fazer somente uma coisa
+Se ele soma, deve-se apenas somar, e não dividir
+
+Código conciso - simples de ler
+
+Acoplamento = dependencia
+Que é ter cuidado sobre tirar o metodo de um lugar e dar problema em outro.
+Tem que quebrar mas até quando quebrar ?
+Tem que ser sempre transparente, não deve afetar outros lugares.
+
+Coesão

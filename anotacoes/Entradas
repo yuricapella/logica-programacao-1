@@ -1,0 +1,59 @@
+public class Entradas {
+    public static void main(String[] args) {
+        System.out.println(args.length);
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+
+
+        String[] args é uma entrada de argumentos
+        Que nem o Scanner
+
+        int idade = Integer.parseInt(args[1])
+        Integer é objeto
+        int é primitivo
+
+        Wrappers, vieram para usar primitivos como Objetos
+        double -> Double
+        float -> Float
+
+        Integer idadeObjeto = Integer.valueOf(2);
+        mas ele ja sabe isso e é só por
+        Integer idadeObjeto = "2";
+
+        Double salarioObjeto = 10.0;
+        Double salarioObjeto = Double.parseDouble("");
+
+        double1 e double2
+        Double.max(double1,double2); retorna o maximo dos dois.
+
+
+
+
+
+
+        main é o inicializador do projeto
+        No campo de String[] args é passado informação tanto pelo terminal com comando quanto por uma config do intellij
+
+
+        Na linha de comando,
+
+
+        projeto de variaveis de ambiente = contém tudo que é passado de argumento
+        e o projeto de verdade usa um gerenciador que vai no arquivo de variaveis, puxa oque ta la e roda o programa.
+
+
+        String nome = args[2];
+
+        parseInt recebe string e devolve int
+        int idade = Integer.parseInt(args[3]);
+
+        transforma int em string
+        String idadeEmTexto = String.valueOf(idade);
+
+        cast, neste caso, converte int em double
+        Double teste = (double) 1;
+
+        polimorfismo, objeto se converter em outro
+
+        mais seguro usar wrapper do que cast pq ele faz validação mas ainda sim é perigoso os dois.
+

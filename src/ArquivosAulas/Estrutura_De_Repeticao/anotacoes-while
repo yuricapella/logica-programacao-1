@@ -1,0 +1,19 @@
+public class While {
+    public static void main(String[] args) {
+        int count = 1;
+
+        while (count <= 10) {
+            System.out.println(count);
+            count++;
+            if (count > 5) {
+                return;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+return é mais forte que um break,
+ se colocar return, vai parar a função inteira
+ e nao somente o while
+
