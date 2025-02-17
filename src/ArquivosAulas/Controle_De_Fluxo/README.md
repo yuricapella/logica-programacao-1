@@ -13,3 +13,7 @@
 ### Arquivo: `anotacoes_controle_de_fluxo`
 **Tema do Arquivo:** Anotações sobre Controle de Fluxo  
 **Resumo:** Este arquivo contém uma anotação sobre o comportamento do framework Spring, comparando-o a um loop `while true` que mantém o servidor em execução até que seja desligado.
+
+---
+
+Este README foi gerado automaticamente para facilitar a compreensão dos códigos presentes no diretório `Entradas_E_Saidas`.
