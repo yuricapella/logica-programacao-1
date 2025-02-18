@@ -1,0 +1,7 @@
+Exercício 1: Enum com Switch-Case e Scanner
+
+Crie um enum chamado OperacaoMatematica representando
+operações matemáticas básicas (+, -, *, /).
+
+Utilize um Scanner para obter a operação do usuário e
+realizar o cálculo com dois números.
