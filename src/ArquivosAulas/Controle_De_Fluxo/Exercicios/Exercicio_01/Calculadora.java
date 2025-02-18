@@ -1,4 +1,4 @@
-package ArquivosAulas.Enum.Exercicio_01;
+package ArquivosAulas.Controle_De_Fluxo.Exercicios.Exercicio_01;
 
 import java.util.Scanner;
 
