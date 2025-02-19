@@ -1,4 +1,4 @@
-package ArquivosAulas.Entradas_E_Saidas;/*
+package ArquivosAulas.Entradas_E_Saidas.Exercicios.Exercicio_02;/*
 Exercício 2: Verificar Dia da Semana
 Peça ao usuário para inserir um número de 1 a 7 usando
 Scanner, onde 1 representa "Domingo" e 7 representa
@@ -9,8 +9,7 @@ correspondente.
 
 import java.util.Scanner;
 
-
-public class EntradaSaidaExercicio02 {
+public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Digite um número de 1 a 7: ");
