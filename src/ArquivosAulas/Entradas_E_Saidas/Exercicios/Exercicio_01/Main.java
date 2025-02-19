@@ -1,4 +1,4 @@
-package ArquivosAulas.Entradas_E_Saidas;/*
+package ArquivosAulas.Entradas_E_Saidas.Exercicios.Exercicio_01;/*
 Exercício 1: Identificar Número Primo
 Peça ao usuário para inserir um número inteiro usando
 Scanner. Utilize o operador ternário para determinar se o
@@ -8,7 +8,7 @@ controle de fluxo.
 
 import java.util.Scanner;
 
-public class EntradaSaidaExercicio01 {
+public class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -20,6 +20,7 @@ public class EntradaSaidaExercicio01 {
 
         System.out.println("O número " + numero + " " + resultado);
     }
+
     public static boolean verificaPrimo(int numero, int divisor) {
         return divisor == numero || (numero % divisor != 0 && verificaPrimo(numero, divisor + 1));
     }

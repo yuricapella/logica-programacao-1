@@ -1,0 +1,7 @@
+Exercício 1: Identificar Número Primo
+Peça ao usuário para inserir um número inteiro usando
+Scanner.
+
+Utilize o operador ternário para determinar se o
+número inserido é primo ou não, sem usar estruturas de
+controle de fluxo.

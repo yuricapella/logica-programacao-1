@@ -1,0 +1,4 @@
+Exercício 4: Identificar o Mes
+Peça ao usuário para inserir um número de 1 a 12. Utilize
+print para exibir o nome do mês correspondente e ternário
+para as verificações.
